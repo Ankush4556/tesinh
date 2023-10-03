@@ -1,11 +1,11 @@
 <?php
-    // header('Content-Type: application/json');
+    header('Content-Type: application/json');
 
     $json = file_get_contents("php://input");
         $data = $json;
-    // sdsfgfd
+    // sdsfgfd sfsf
     echo '<pre>';
-    print_r($data);die('fgf');
+    return var_dump($data);
 
 ?>
 
