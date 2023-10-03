@@ -1,11 +1,11 @@
 <?php
-    header('Content-Type: application/json');
+    // get the webhook response
+$body = @file_get_contents("php://input");
 
-    $json = file_get_contents("php://input");
-        $data = $json;
-    // sdsfgfd sfsf
+// decode the json data into a php object
+$response = json_decode($body);
     echo '<pre>';
-    return var_dump($data);
+    return var_dump($response);
 
 ?>
 
